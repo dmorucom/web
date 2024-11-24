@@ -1,2 +1,0 @@
-# web
-pangpang edu website
