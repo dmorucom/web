@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>팡팡에듀</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- 중복되는 경우 아래쪽에 있는 스타일시트로 덮어 씌여진다. 따라서 직접 만든 스타일시트를 부트스트랩 링크 아래쪽에 삽입한다. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Sunflower:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="pangpang-font navbar-brand" href="#home">
+                <img src="images/logo.jpg" alt="로고"> 팡팡에듀
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#nav-menu" 
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-book">책 소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">출판 도서</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">서비스</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">블로그</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+    <!-- 헤더 영역 끝 -->
+    <header id="home" class="d-flex vh-100 flex-column justify-content-center align-items-center text-white">
+        <h1 class="display-3 fw-bold mb-5">팡팡에듀 | 어휘력 팡팡</h1>
+        <h4 class="fs-2 mb-3">어휘력의 중요성</h4>
+        <p class="lead mb-5">놀이 처럼 재미있게 익히는 어휘력 학습지</p>
+        <!-- button 의 type 을 생략하면 기본으로 submit 으로 설정된다. 버튼으로 사용하기 위해 type 을 button 으로 지정. -->
+        <!-- <button type="button" class="btn btn-outline-warning rounded-pill" onclick="location.href='#about-book'">우리집 화장실</button> -->
+        <button type="button" data-bs-toggle="modal" data-bs-target="#bestProductModal" class="btn btn-outline-warning rounded-pill">우리집 화장실</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bestProductModal" tabindex="-1" aria-labelledby="bestProductModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="bestProductModal">우리집 화장실</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/bestproduct.jpg" alt="대표 서적" class="img-fluid">
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cum explicabo quam quos ad sapiente deserunt blanditiis deleniti, perferendis molestiae.</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatibus corporis ab labore consectetur natus possimus! Molestiae, rem delectus fugiat suscipit assumenda, quisquam repudiandae, cupiditate recusandae exercitationem deserunt in ex consectetur error voluptatem amet soluta? Culpa consequuntur quam alias incidunt architecto, rerum error quidem dolorem corporis saepe. Dolorem quos reiciendis, ipsum quaerat eligendi dolore veniam aliquam et nihil vitae consequatur, modi porro nobis eius beatae eos tenetur nisi aperiam laborum dignissimos sint, libero perspiciatis rerum. Ullam praesentium dolorum mollitia illum necessitatibus alias quos perferendis, autem nisi tempore ab nulla tenetur, debitis veniam sunt qui ipsam harum neque iusto. Recusandae, adipisci!</p>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 헤더 영역 끝 -->
+
+    <!-- 책 소개 섹션 시작 -->
+    <section class="container py-5" id="about-book">
+        <div class="text-center py-5">
+            <h2 class="fw-bold">어휘력 팡팡 | 우리집 화장실</h2>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, totam!</p>
+        </div>
+
+        <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-md-5">
+                <img src="images/book.jpg" alt="어휘력팡팡 우리집화장실" class="img-fluid">
+            </div>
+            <div class="col-md-7 col-lg-5 px-lg-5">
+                <h3 class="fw-bold mb-3">우리집 화장실</h3>
+                <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aspernatur aliquam, eveniet unde velit vero laboriosam fugiat sit quod sequi delectus vel minus tempore saepe!</p>
+                <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aspernatur aliquam, eveniet unde velit vero laboriosam fugiat sit quod sequi delectus vel minus tempore saepe!</p>
+            </div>
+        </div>
+    </section>
+    <!-- 책 소개 섹션 끝 -->
+
+    <!-- 출판 도서 섹션 시작 -->
+     <section class="bg-dark py-5" id="portfolio">
+        <div class="container overflow-hidden">
+            <div class="text-center text-white py-5">
+                <h2 class="fw-bold mb-3"> 출간 서적 | 출간 예정 서적</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="row pb-5 g-4 text-center text-white">
+                <div class="col-sm-3 col-lg4">
+                    <p> 출간 - 온・오프라인 판매중 </p>
+                    <img src="images/book_bathroom.jpg" alt="우리집화장실" class="img-fluid img-thumbnail">
+                    
+                </div>
+                <div class="col-sm-3 col-lg4">
+                    <p> 출간 예정 </p>
+                    <img src="images/book_livingroom.jpg" alt="우리집거실" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-sm-3 col-lg4">
+                    <p> 출간 예정 </p>
+                    <img src="images/book_bathroom.jpg" alt="우리집화장실" class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-sm-3 col-lg4">
+                    <p> 출간 예정 </p>
+                    <img src="images/book_bathroom.jpg" alt="우리집화장실" class="img-fluid img-thumbnail">
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- 출판 도서 섹션 끝 -->
+
+    <!-- 서비스 섹션 시작 -->
+    <section class="container py-5" id="service">
+        <div class="lead text-center py-5">
+            <h2 class="fw-bold mb-3">팡팡에듀 서비스</h2>
+            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="row mb-5 g-4">
+            <!-- 서비스1 -->
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex align-items-center py-3">
+                        <img src="images/service1.jpg" alt="서비스1" class="rounded-circle">
+                        <div class="ms-3">
+                            <h3 class="fw-bold">출판</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam, quae maxime, mollitia molestiae voluptates dolor quos ipsum, maiores dicta incidunt error necessitatibus eaque quisquam.</p>
+                </div>
+            </div>
+            <!-- 서비스2 -->
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex justify-content-end align-items-center py-3">
+                        <div class="text-end me-3">
+                            <h3 class="fw-bold">강의</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="images/service2.jpg" alt="서비스2" class="rounded-circle">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam, quae maxime, mollitia molestiae voluptates dolor quos ipsum, maiores dicta incidunt error necessitatibus eaque quisquam.</p>
+                </div>
+            </div>
+            <!-- 서비스3 -->
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex align-items-center py-3">
+                        <img src="images/service3.jpg" alt="서비스3" class="rounded-circle">
+                        <div class="ms-3">
+                            <h3 class="fw-bold">교육용 앱</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam, quae maxime, mollitia molestiae voluptates dolor quos ipsum, maiores dicta incidunt error necessitatibus eaque quisquam.</p>
+                </div>
+            </div>
+            <!-- 서비스4 -->
+            <div class="col-md-6">
+                <div class="card-hover shadow rounded p-4">
+                    <div class="d-flex justify-content-end align-items-center py-3">
+                        <div class="text-end me-3">
+                            <h3 class="fw-bold">신제품 개발</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="images/service4.jpg" alt="서비스4" class="rounded-circle">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam, quae maxime, mollitia molestiae voluptates dolor quos ipsum, maiores dicta incidunt error necessitatibus eaque quisquam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 서비스 섹션 끝 -->
+
+    <!-- SNS 섹션 시작 -->
+     <section class="py-5" id="sns-links">
+        <div class="container text-center text-white">
+            <h2 class="fw-bold mb-3">팡팡에듀 SNS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, laudantium.</p>
+            <div class="d-flex justify-content-evenly px-5 mt-4 w-50 m-auto"> 
+                <a href="https://www.instagram.com/pangpang_edu/" class="btn btn-warning rounded-pill btn-lg px-4" target="_blank"> <i class="bi bi-instagram"></i> </a>
+                <a href="https://blog.naver.com/pangpang_edu" class="btn btn-naver rounded-pill btn-lg px-4 fs-6" target="_blank"> 블로그 </a>
+                <a href="https://www.youtube.com/@pangpang_edu" class="btn btn-danger rounded-pill btn-lg px-4" target="_blank"> <i class="bi bi-youtube"></i> </a>
+            </div>
+        </div>
+     </section>
+    <!-- SNS 섹션 끝 -->
+
+    <!-- 블로그 섹션 시작 -->
+    <section class="container overflow-hidden py-5" id="blog">
+        <div class="text-center py-5">
+            <h2 class="fw-bold">팡팡에듀 블로그</h2>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, suscipit?</p>
+        </div>
+        <div class="row pb-5 gy-4">
+            <!-- 블로그 1 -->
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/blog1.jpg" alt="블로그 1" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">블로그1</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, aut eaque enim culpa molestiae officia.</p>
+                        <a href="#" class="btn btn-warning btn-sm">read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 블로그 2 -->
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/blog2.jpg" alt="블로그 2" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">블로그2</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, aut eaque enim culpa molestiae officia.</p>
+                        <a href="#" class="btn btn-warning btn-sm">read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 블로그 3 -->
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/blog3.jpg" alt="블로그 3" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">블로그3</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, aut eaque enim culpa molestiae officia.</p>
+                        <a href="#" class="btn btn-warning btn-sm">read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 블로그 4 -->
+            <div class="col-sm-6 col-lg">
+                <div class="card">
+                    <img src="images/blog4.jpg" alt="블로그 4" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">블로그4</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, aut eaque enim culpa molestiae officia.</p>
+                        <a href="#" class="btn btn-warning btn-sm">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 블로그 섹션 끝 -->
+
+    <!-- 뉴스 섹션 시작 -->
+    <section class="py-5" id="news">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-9 text-white">
+                    <h2 class="fw-bold mb-3">팡팡에듀 뉴스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id sed et sequi error omnis architecto eligendi placeat fuga laboriosam mollitia ad inventore eaque, quidem enim beatae voluptatem assumenda quisquam?</p>
+                </div>
+                <div class="col-lg-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning px-4" data-bs-toggle="modal" data-bs-target="#newsModal">
+                        뉴스 보기
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="newsModalTitle">팡팡에듀 뉴스</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/A_1qZRuHXDM?si=X0aTPbVV2tt-Qr4D" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 뉴스 섹션 끝 -->
+
+    <!-- 연락처 섹션 시작 -->
+    <section class="container overflow-hidden py-5 text-center" id="contact"> 
+        <div class="py-5">
+            <h2 class="fw-bold">Contact</h2>
+            <p class="lead text-muted">업무 제휴 문의 및 Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="row py-5 gy-3 justify-content-center">
+            <!-- 이메일 -->
+            <div class="col-lg-4 col-md-5">
+                <div class="shadow p-4 border-top border-4 border-warning">
+                    <i class="bi bi-envelope-heart fs-5 text-warning"></i>
+                    <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                    <hr>
+                    <p class="text-muted">ppedu@naver.com</p>
+                </div>
+            </div>
+            <!-- 전화번호 -->
+            <div class="col-lg-4 col-md-5">
+                <div class="shadow p-4 border-top border-4 border-success">
+                    <i class="bi bi-telephone-fill fs-5 text-success"></i>
+                    <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                    <hr>
+                    <p class="text-muted">010-2157-2154</p>
+                </div>
+            </div>
+            <!-- 주소 -->
+            <div class="col-lg-4 col-md-10">
+                <div class="shadow p-4 border-top border-4 border-danger">
+                    <i class="bi bi-car-front-fill fs-5 text-danger"></i>
+                    <h3 class="fw-bold fs-5 py-2">주소</h3>
+                    <hr>
+                    <p class="text-muted">경기도 수원시 팔달구 인계동</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 연락처 섹션 끝 -->
+
+    <!-- 풋터 섹션 시작 -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2024 Desined by <a href="https://www.pangpangedu.com/" target="_blank" class="pangpang-font link-warning text-decoration-none">팡팡에듀</a></p>
+        </div>
+    </footer>
+    <!-- 풋터 섹션 끝 -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

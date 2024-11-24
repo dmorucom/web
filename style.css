@@ -1,0 +1,71 @@
+/* 바디 영역 */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4, 
+.pangpang-font {
+    font-family: "Sunflower", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 네이게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* 헤더 영역 */
+header {
+    /* 그라데이션 각도는 to top 외에 (135deg 와 같이) 원하는 각도를 설정 할 수 있다. */
+    /* background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(images/main-bg.jpg); */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/main-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* 서비스 섹션 */
+.card-hover:hover {
+    background-color: rgba(127, 255, 212, 0.2);
+}
+
+
+/* SNS 영역 */
+#sns-links {
+    /* 그라데이션 각도 생략시 기본으로 위쪽에서 아래쪽으로 적용된다. */
+    /* background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(images/main-bg.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 뉴스 섹션 */
+#news {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/news-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-naver {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: #03C75A;
+    --bs-btn-border-color: #03C75A;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #18B75F;
+    --bs-btn-hover-border-color: #18B75F;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
